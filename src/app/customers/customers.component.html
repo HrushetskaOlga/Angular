@@ -1,0 +1,26 @@
+<form #form="ngForm" class="form">
+  <p class="title">Add new User</p>
+  <div class="form-group">
+    <label for="name">name</label>
+    <input type="text" id="name" name="name" class="form-control" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="address">address</label>
+    <input type="text" id="address" name="address" class="form-control" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="phone">phone</label>
+    <input type="text" id="phone" name="phone" class="form-control" ngModel>
+  </div>
+  <button class="btn btn-primary" (click)="addCustomers(form)" [disabled]="!form.valid">Add customer</button>
+</form>
+<div class="box">
+  <div class="card text-white bg-warning mb-3" *ngFor="let customer of customers;let i = index" [@flyInOut]>
+    <img src="../../assets/customers.icon.png"/>
+    <p>Name: {{customer.name}}</p>
+    <p>Address: {{customer.address}}</p>
+    <p>Number: {{customer.phone}}</p>
+    <button (click)="deleteCustomer(customer.id)">Delete</button>
+    <button (click)="editCustomer(customer)">Edit</button>
+  </div>
+</div>

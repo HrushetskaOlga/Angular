@@ -1,0 +1,49 @@
+
+.box {
+  width: 800px;
+  margin: auto;
+}
+
+.product {
+  margin: 10px;
+  width: 100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 15% 30% 25% 15% 15%;
+  text-align: center;
+  border-radius: 30%;
+  font-size: 20px;
+  background: linear-gradient(to right, #e8cbc0, #636fa4);
+}
+
+.product:hover {
+  background: #c7c7c7;
+}
+
+.btn {
+  border-radius: 10%;
+  width: 80px;
+  height: 40px;
+  margin: auto;
+}
+
+p, img {
+  margin: auto;
+}
+img{
+  height:51px;
+  width:51px;
+}
+
+.form {
+  width: 200px;
+  margin: 20px auto;
+}
+.addButton{
+  width: 200px;
+}
+.title {
+  font-family: 'Mali', cursive;
+  font-size: 40px;
+}
+

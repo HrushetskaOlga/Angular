@@ -1,0 +1,40 @@
+.box{
+  width: 800px;
+  margin:auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.user{
+  margin: 10px;
+  width: 200px;
+  height: 150px;
+  justify-content: space-around;
+  text-align: start;
+  border-radius: 15%;
+}
+p,img{
+  margin: auto;
+}
+img{
+  height:51px;
+  width:51px;
+}
+.card{
+  margin: 10px;
+}
+.btn{
+  border-radius: 10%;
+  width: 80px;
+  height: 40px;
+}
+.btn-primary{
+  width: 200px;
+}
+.form{
+  width: 200px;
+  margin: 20px auto;
+}
+.title{
+  font-family: 'Mali', cursive;
+  font-size: 40px;
+}
